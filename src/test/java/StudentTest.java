@@ -46,8 +46,11 @@ public class StudentTest {
         assertEquals(1, jenn.getGrades().size());
     }
 
-//    @Test
-//    public void getGrades(){
-//        assertEquals();
-//    }
+    @Test
+    public void testAverageGrade(){
+        Student fer = new Student(1L, "fer");
+        fer.addGrade(100);
+        fer.addGrade(80);
+        assertEquals(90, fer.getGradeAverage(), 0);
+    }
 }
